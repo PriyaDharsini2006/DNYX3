@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Password</title>
+    <style>
+        body {
+            background:rgb(124, 30, 69) ;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background:rgb(231, 151, 185);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="updatePasswordForm">
+            <div class="form-group">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                <p id="newPasswordErrMsg" class="error"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                <p id="confirmPasswordErrMsg" class="error"></p>
+            </div>
+
+            <button type="submit" id="updateBtn">Update Password</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
